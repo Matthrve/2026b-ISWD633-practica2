@@ -58,7 +58,9 @@ No olvides verificar en qué directorio se encuentra el archivo Dockerfile
 
 **¿Cuántos pasos se han ejecutado?**
 # RESPONDER 
-
+Cada instrucción en el Dockerfile (FROM, RUN, COPY, CMD, etc.) cuenta como un paso.
+Por lo tanto, el número de pasos ejecutados corresponde al número de instrucciones escritas en el Dockerfile.
+Respuesta: Se han ejecutado tantos pasos como instrucciones contiene el Dockerfile
 ### Inspeccionar la imagen creada
 # COMPLETAR CON UNA CAPTURA
 
