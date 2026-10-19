@@ -76,3 +76,11 @@ _Puedes copiar y ejecutar directamente el comando_
 ```
 docker run -d --name server-nginx --health-cmd="curl http://localhost" --health-interval=3s --health-start-period=5s --health-retries=3 --health-timeout=10s nginx:alpine
 ```
+
+Un Healthcheck en Docker sirve para que el sistema ejecute periódicamente un comando dentro del contenedor y determine si está funcionando bien.
+
+Si el comando devuelve 0, el contenedor se marca como healthy.
+
+Si devuelve un valor distinto de 0, se marca como unhealthy.
+
+De esta manera, Docker puede detectar automáticamente fallos en el servicio y actuar (por ejemplo, reiniciar el contenedor).
