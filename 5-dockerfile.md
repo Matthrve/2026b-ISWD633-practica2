@@ -73,7 +73,7 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 - Instrucciones de configuración (ENV, RUN, COPY, etc.): Docker verifica si alguna instrucción ha cambiado. Si no, reutiliza la capa correspondiente de la caché.
 - Instrucción COPY y ADD: Si los archivos copiados no han cambiado, Docker reutiliza la capa de caché correspondiente.
 ![mapeo](img/dockerfile-cache.PNG)
-
+Se ejecutaron los mismos pasos que en la versión 1.0, uno por cada instrucción del Dockerfile. Lo diferente es que la construcción fue más rápida: Docker reutilizó de la caché los pasos que no cambiaron (aparecen como CACHED) y solo volvió a ejecutar el COPY del index.html, que sí cambió.
 ### Crear un contenedor a partir de las imagen creada, mapear todos los puertos
 ```
 
