@@ -61,6 +61,7 @@ No olvides verificar en qué directorio se encuentra el archivo Dockerfile
 Se ejecuta un paso por cada instrucción del Dockerfile. Con el Dockerfile asumido serían 5 (FROM, RUN, COPY, EXPOSE, CMD).
 ### Inspeccionar la imagen creada
 # COMPLETAR CON UNA CAPTURA
+<img width="391" height="506" alt="image" src="https://github.com/user-attachments/assets/387b4feb-d105-4328-896a-042e3a900535" />
 
 **Modificar el archivo index.html para incluir su nombre y luego crear una nueva versión de la imagen anterior**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
