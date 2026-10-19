@@ -11,7 +11,7 @@ Asignar núcleos de CPU específicos:
 
 **¿Como saber el numero de procesadores virtuales que tiene una máquina?**
 ## COMPLETAR
-
+El número de procesadores virtuales no es algo que se deduzca solo por cálculo, sino que se obtiene ejecutando comandos propios del sistema como nproc en Linux, sysctl -n hw.ncpu en macOS o Get-WmiObject Win32_Processor en Windows.
 ## Ejemplos
 _Puedes copiar y ejecutar directamente cada uno de los comandos_
 
