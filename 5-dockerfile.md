@@ -81,10 +81,10 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 
 ### ¿Con que puerto host se está realizando el mapeo?
 # COMPLETAR CON LA RESPUESTA
-
+El puerto host es el que aparece antes de “:”. Ejemplo: en -p 8080:80, el puerto host es 8080.
 **¿Qué es una imagen huérfana?**
 # COMPLETAR CON LA RESPUESTA
-
+Es una imagen sin referencia, creada normalmente al reconstruir una imagen, que ocupa espacio pero no se utiliza.
 ### Identificar imágenes huérfanas
 ```
 docker images -f "dangling=true"
